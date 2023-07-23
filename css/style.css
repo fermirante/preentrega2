@@ -63,7 +63,7 @@ body {
     
 }
 
-.menunav{
+.nav{
     display:flex;
     justify-content: center;
     margin-right: 5px;
@@ -71,14 +71,14 @@ body {
     flex-wrap: wrap
 }
 
-.menunav_item a {
+.nav_item a {
     display: inline-block;
     list-style: none;
     font-size: 1.6rem;
     color: rgba(132, 132, 132, 0.872);
 }
 
-.link{
+.nav_link{
     text-decoration: none;
     color: inherit;
     padding: 15px;
@@ -88,7 +88,7 @@ body {
 
 }
 
-.link::after{
+.nav_link::after{
     content: "";
     width: 0;
     height: 4px;
@@ -100,10 +100,14 @@ body {
     will-change: width;
 }
 
-.link:hover::after{
+.nav_link:hover::after{
     width: 100%;
     right: 0;
 }
+
+
+
+
 
 /*Estilos main*/
 main {
@@ -209,12 +213,28 @@ main {
 }
 
 /* estilo wpp */
-.whatsapp{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    z-index: 1;
-    width: 40px;
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#fff;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#25d366;
+}
+
+.my-float{
+	margin-top:16px;
 }
 
 /* estilos index*/
@@ -300,7 +320,7 @@ main {
     margin-top: 1rem;
     margin-bottom: 1rem;
     background:rgba(132, 132, 132, 0.872);
-    border-color:  rgba(50, 50, 40, 0.872);
+    border-color:  rgba(83, 83, 69, 0.872);
     color: #fff;
     width: 100px;
     height: 50px;
@@ -321,20 +341,21 @@ main {
     display: flex ;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
-    margin: 0 auto;
     flex-wrap: wrap;
     padding: 0 1rem;
     background-color:#fff;
 }
 
-.grupo-map{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+.map{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+.contactenos{
+    justify-content: center;
+    align-items: center;
 }
 
 .ubicacion{
@@ -342,32 +363,42 @@ main {
     background-color:#fff;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-top: 30px;
+    margin-bottom: 1rem;
+    max-width: 1200px;
 }
 
-
-.info {
+.info{
     width: 100%;
     padding: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
 }
 .info h2 {
-    margin-top: 0;
-    color:  rgba(50, 50, 40, 0.872);
+    color:  #fff;
+    margin-bottom: 1rem;
 }
 
 .info p {
-    margin-bottom: 10px;
-    color: rgba(50, 50, 40, 0.872);
+    color: #fff;
+    font-weight: lighter;
 }
 
 .info i {
     margin-right: 10px;
+    color: #fff;
 }
 
-#map .grupo-map .info p i{
-    color:  rgba(50, 50, 40, 0.872);
+#contact{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    background-color: rgba(50, 50, 40, 0.872);
 }
-
 
 /* estilos galeria*/
 #section-galeria{

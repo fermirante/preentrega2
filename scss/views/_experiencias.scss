@@ -31,7 +31,12 @@
         flex: 1 1 clamp(300px, 30%, 400px);
         .articulo__img{
             width: 200px;
-            height: 200px;
+            height: 200px;     
+            max-width: 100%;
+            & :hover {
+            transform: scale(1.1);
+            transition: all 5s; 
+            }
         }
 
         .articulo__title{

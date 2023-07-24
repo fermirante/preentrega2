@@ -10,47 +10,57 @@
     <script src="https://kit.fontawesome.com/c8a9350c8e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-        <header id="encabezado">
-            <a href="index.html">
-                <img class="logo" src="./images/lacruce.png" alt="">
-            <ul class="nav">
-                <li class="nav_item"><a href="index.html" class="nav_link">Inicio</a></li>
-                <li class="nav_item"><a href="./pages/reservas.html" class="nav_link">Reservas</a></li>
-                <li class="nav_item"><a href="./pages/contacto.html" class="nav_link">Contacto</a></li>
-                <li class="nav_item"><a href="./pages/galeria.html" class="nav_link">Galeria</a></li>
-                <li class="nav_item"><a href="./pages/experiencias.html" class="nav_link">Experiencias</a></li>
-            </ul>
-        </header>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="logo" href="index.html">
+                    <img src="./images/lacruce.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="nav-link">INICIO</a></li>
+                        <li class="nav-item"><a href="./pages/reservas.html" class="nav-link">RESERVAS</a></li>
+                        <li class="nav-item"><a href="./pages/contacto.html" class="nav-link">CONTACTO</a></li>
+                        <li class="nav-item"><a href="./pages/galeria.html" class="nav-link">GALERIA</a></li>
+                        <li class="nav-item"><a href="./pages/experiencias.html" class="nav-link">EXPERIENCIAS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <img class="bannerindex" src="./images/renderfrente.jpeg" alt="">
-            <div class="whatsapp">
-                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <main>
+        <img class="bannerindex" src="./images/renderfrente.jpeg" alt="">
+        <div class="whatsapp">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                 <a href="https://api.whatsapp.com/send?phone=5195508107&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
                 <i class="fa fa-whatsapp my-float"></i>
                 </a>
-            </div>
-        </main>
+        </div>
+    </main>
 
-        <section id="section1" >
+    <section id="section1" >
             <h1 class="titulos">Vivi la montana cerca de la ciudad</h1>
             <p>La Crucesita es un barrio ecológico, autosustentable, ubicado en el corazón del Piedemonte mendocino, a 1400 m.s.n.m. En un entorno natural único, al pie de las montanas, con un microclima especial, te propone una experiencia anti-estrés, de descanso, bienestar y revitalización. Priorizamos la vida por sobre todas las cosas, es decir al ser humano, a la naturaleza, al universo. Es un lugar para amantes de la naturaleza vivir y disfrutar la montaña a tan sólo 30´ de la ciudad de Mendoza, respetando la flora y fauna autóctona, con casas construidas sólo con piedras de la zona para mantener la estética paisajística y natural del lugar</p>  
-        </section>
+    </section>
 
-        <section id="articulosi">
+    <section id="articulosi">
+            <article class="articuloi">
+                <img class="articuloi-img" src="./images/46500397221_792b36b6f8_b.jpg" alt="" width="400px" height="250px">
+                <p class="articuloi__title">Cercano a bodegas</p>
+            </article>
+
                 <article class="articuloi">
-                    <img class="articuloi__img" src="./images/46500397221_792b36b6f8_b.jpg" alt="" width="400px" height="250px">
-                    <p class="articuloi__title">Cercano a bodegas</p>
+                    <img class="articuloi-img" src="./images/15379602.jpg" alt="" width="400px" height="250px">
+                    <p class="articuloi-title">Facil acceso a senderos</p>
                 </article>
 
                 <article class="articuloi">
-                    <img class="articuloi__img" src="./images/15379602.jpg" alt="" width="400px" height="250px">
-                    <p class="articuloi__title">Facil acceso a senderos</p>
-                </article>
-
-                <article class="articuloi">
-                    <img class="articuloi__img" src="./images/cerro.jpeg" alt="" width="400px" height="250px">
-                    <p class="articuloi__title">Conexion con la naturaleza</p>
+                    <img class="articuloi-img" src="./images/cerro.jpeg" alt="" width="400px" height="250px">
+                    <p class="articuloi-title">Conexion con la naturaleza</p>
                 </article>
         </section>
 

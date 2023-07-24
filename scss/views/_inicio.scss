@@ -1,5 +1,9 @@
 .bannerindex {
   max-width: 100%; }
+.bannerindex:hover{
+  transform: scale(1.1);
+  transition: all 5s;
+}
 
     #section1 {
     @include flex;

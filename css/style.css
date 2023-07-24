@@ -162,6 +162,34 @@ main {
 
 .bannerindex {
   max-width: 100%; }
+  .bannerindex :hover {
+    transform: scale(1.1);
+    transition: all 5s; }
+
+.articuloi__img {
+  max-width: 100%; }
+  .articuloi__img :hover {
+    transform: scale(1.1);
+    transition: all 5s; }
+
+.articulo__img {
+  max-width: 100%; }
+  .articulo__img :hover {
+    transform: scale(1.1);
+    transition: all 5s; }
+
+.art-galeria {
+  transition: 3s; }
+  .art-galeria :hover {
+    width: 320px;
+    height: 320px; }
+
+.bannerindex {
+  max-width: 100%; }
+
+.bannerindex:hover {
+  transform: scale(1.1);
+  transition: all 5s; }
 
 #section1 {
   display: flex;
@@ -231,9 +259,7 @@ main {
   .formulario .grid {
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 3rem; }
   .formulario .text {
@@ -254,6 +280,13 @@ main {
 
 .section2-reservas .carrusel-text {
   color: #fff; }
+
+.bannercontacto {
+  max-width: 100%; }
+
+.bannercontacto:hover {
+  transform: scale(1.1);
+  transition: all 5s; }
 
 #section1-contacto {
   display: flex;

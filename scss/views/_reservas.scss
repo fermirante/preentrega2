@@ -1,17 +1,21 @@
 #reserva{
     background-color:rgba(50, 50, 40, 0.872);
     @include flex;
-    h1 { 
-    @include flex;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    color: #fff;}
-    .col-lg-12{
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        height: 400px;
-        .row{
+    .row{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        .col-lg-3{
+            color: #fff;
+            font-size: 20px;
+            margin-top: 2rem;
+        }
+        .col-lg-12{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
             gap: 20px;
+        }
+        .col-lg-1{
+            color: rgba(50, 50, 40, 0.872);
         }
     }
 }

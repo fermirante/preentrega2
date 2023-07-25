@@ -238,20 +238,19 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-  #reserva h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    color: #fff; }
-  #reserva .col-lg-12 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 400px; }
-    #reserva .col-lg-12 .row {
+  #reserva .row {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+    #reserva .row .col-lg-3 {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 2rem; }
+    #reserva .row .col-lg-12 {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
       gap: 20px; }
+    #reserva .row .col-lg-1 {
+      color: rgba(50, 50, 40, 0.872); }
 
 label {
   color: rgba(50, 50, 40, 0.872); }
@@ -273,16 +272,18 @@ label {
 
 #section1-contacto {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   font-weight: bold;
   background-color: rgba(50, 50, 40, 0.872); }
   #section1-contacto .contactenos {
-    margin-top: 3rem;
-    color: #fff;
+    display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    color: #fff; }
   #section1-contacto .container {
     display: flex;
     justify-content: center;

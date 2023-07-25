@@ -5,20 +5,29 @@
     transition: all 5s;
 }
 #section1-contacto {
-    @include flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     font-weight: bold;
     background-color: rgba(50, 50, 40, 0.872);
     .contactenos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         margin-top: 3rem;
         color: #fff;
-        justify-content: center;
-        align-items: center;}
+    }
     .container {
-        @include flex;
-            gap: 100px;
-            background-color: #fff;
-            margin-bottom: 3rem;
-            .form-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 100px;
+        background-color: #fff;
+        margin-bottom: 3rem;
+        .form-control {
                 height: 36px;
                 background: #fff;
                 color: rgba(0, 0, 0, 0.8);

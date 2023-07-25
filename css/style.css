@@ -61,7 +61,7 @@ header .logo {
   width: 70px;
   height: 70px;
   margin-left: 60px;
-  margin-right: 200px; }
+  margin-right: 300px; }
 
 header .navbar-nav {
   justify-content: center;
@@ -232,50 +232,29 @@ main {
       transform: scale(1.1);
       transition: all 5s; }
 
-#book {
+#reserva {
+  background-color: rgba(50, 50, 40, 0.872);
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  background: rgba(132, 132, 132, 0.872);
-  color: #fff;
-  padding: 20px;
-  margin: 0 auto; }
-  #book h1 {
-    color: #fff; }
-    #book h1 span {
-      color: rgba(50, 50, 40, 0.872); }
-  #book input {
-    outline: none;
-    border: none;
-    width: 100%;
-    padding: 20px; }
-    #book input:nth-last-child(1) {
-      background-color: rgba(50, 50, 40, 0.872);
-      color: #fff; }
-
-.formulario {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center; }
-  .formulario .grid {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 3rem; }
-  .formulario .text {
+  flex-wrap: wrap; }
+  #reserva h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
-    margin-bottom: 1rem; }
-  .formulario input {
-    outline: none;
-    border: none;
-    width: 100%; }
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color: #fff; }
+  #reserva .col-lg-12 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 400px; }
+    #reserva .col-lg-12 .row {
+      gap: 20px; }
+
+label {
+  color: rgba(50, 50, 40, 0.872); }
 
 .section2-reservas .carrusel-tit {
   color: #fff;

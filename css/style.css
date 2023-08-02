@@ -95,7 +95,11 @@ header .navbar-nav {
 
 @media (max-width: 800px) {
   .logo {
-    width: 300%; } }
+    width: 100%; } }
+
+@media (max-width: 350px) {
+  .logo {
+    width: 200%; } }
 
 #footer {
   width: 100%;

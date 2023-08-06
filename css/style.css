@@ -97,9 +97,14 @@ header .navbar-nav {
   .logo {
     width: 100%; } }
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   .logo {
-    width: 200%; } }
+    width: 200%;
+    margin-left: 10px; } }
+
+@media (max-width: 400px) {
+  .container-fluid {
+    flex-direction: column; } }
 
 #footer {
   width: 100%;
@@ -180,14 +185,13 @@ main {
     transform: scale(1.1);
     transition: all 5s; }
 
-.articulo__img {
+.art__img {
   max-width: 100%; }
-  .articulo__img :hover {
-    transform: scale(1.1);
-    transition: all 5s; }
+  .art__img :hover {
+    transform: scale(1.1); }
 
 .art-galeria {
-  transition: 3s; }
+  transition: all 3s; }
   .art-galeria :hover {
     width: 320px;
     height: 320px; }
@@ -247,18 +251,20 @@ main {
   align-items: center;
   flex-wrap: wrap; }
   #reserva .row {
-    margin-top: 2rem;
     margin-bottom: 2rem; }
     #reserva .row .col-lg-3 {
       color: #fff;
-      font-size: 20px;
-      margin-top: 2rem; }
+      font-size: 20px; }
+      #reserva .row .col-lg-3 .form-select {
+        font-size: 16px; }
     #reserva .row .col-lg-12 {
       margin-top: 2rem;
       margin-bottom: 2rem;
       gap: 20px; }
     #reserva .row .col-lg-1 {
       color: rgba(50, 50, 40, 0.872); }
+    #reserva .row .boton-reservas {
+      color: #fff; }
 
 label {
   color: rgba(50, 50, 40, 0.872); }
@@ -400,7 +406,8 @@ label {
     align-items: center; }
     #galeria .art-galeria .art__img {
       margin-top: 5px;
-      width: 100%; }
+      width: 100%;
+      transition: all .7s; }
 
 @media (max-width: 800px) {
   .art-galeria {
@@ -408,7 +415,8 @@ label {
 
 @media (max-width: 600px) {
   .art-galeria {
-    flex: 100%; } }
+    flex: 100%;
+    flex-wrap: wrap; } }
 
 #section1-exp {
   display: flex;
@@ -447,8 +455,7 @@ label {
       height: 200px;
       max-width: 100%; }
       #articulos .articulo .articulo__img :hover {
-        transform: scale(1.1);
-        transition: all 5s; }
+        transform: scale(1.1); }
     #articulos .articulo .articulo__title {
       font-size: 2rem;
       font-family: 'Roboto', sans-serif;

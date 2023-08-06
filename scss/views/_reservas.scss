@@ -2,12 +2,13 @@
     background-color:rgba(50, 50, 40, 0.872);
     @include flex;
     .row{
-        margin-top: 2rem;
         margin-bottom: 2rem;
         .col-lg-3{
             color: #fff;
             font-size: 20px;
-            margin-top: 2rem;
+            .form-select{
+                font-size: 16px;
+            }
         }
         .col-lg-12{
             margin-top: 2rem;
@@ -16,6 +17,9 @@
         }
         .col-lg-1{
             color: rgba(50, 50, 40, 0.872);
+        }
+        .boton-reservas{
+            color:#fff
         }
     }
 }

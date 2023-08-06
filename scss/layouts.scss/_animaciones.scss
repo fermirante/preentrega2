@@ -14,19 +14,19 @@
         }
     }
 
-.articulo__img{
+.art__img{
     max-width: 100%;
     & :hover {
         transform: scale(1.1);
-        transition: all 5s; 
     }
 }
 
 
 .art-galeria{
-    transition: 3s;
+    transition:all 3s;
     & :hover{
         width: 320px;
         height: 320px;
     }
 }
+

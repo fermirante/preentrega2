@@ -23,11 +23,14 @@
         .art__img {
             margin-top: 5px;
             width: 100%;
+            transition: all .7s;
         }
     }
 }
 
     @media (max-width: 800px) {
+
+
         .art-galeria {
         flex: 50%;
     }
@@ -35,5 +38,6 @@
     @media (max-width: 600px) {
     .art-galeria {
         flex: 100%;
+        flex-wrap: wrap;
     }
     }

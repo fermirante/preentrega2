@@ -335,8 +335,6 @@ main {
       font-weight: 700;
       margin-bottom: 0.5rem; }
     #section1-contacto .container .btn.btn-primary {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
       font-size: 14px;
       background: rgba(132, 132, 132, 0.872);
       border-color: rgba(83, 83, 69, 0.872);

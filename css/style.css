@@ -60,14 +60,13 @@ header .logo {
   margin-bottom: 1rem;
   width: 70px;
   height: 70px;
-  margin-left: 60px;
-  margin-right: 300px; }
+  margin-left: 20px; }
 
-header .navbar-nav {
+header .navbar-collapse .navbar-nav {
   justify-content: center;
   text-align: center;
   color: #6e7051; }
-  header .navbar-nav .nav-item a {
+  header .navbar-collapse .navbar-nav .nav-item a {
     display: inline-block;
     margin-left: 40px;
     text-align: center;
@@ -78,7 +77,7 @@ header .navbar-nav {
     position: relative;
     color: #6e7051;
     font-size: 18px; }
-    header .navbar-nav .nav-item a::after {
+    header .navbar-collapse .navbar-nav .nav-item a::after {
       content: "";
       width: 0;
       height: 3px;
@@ -89,7 +88,7 @@ header .navbar-nav {
       transition: all 0.5s;
       will-change: width;
       margin-left: 10px; }
-    header .navbar-nav .nav-item a:hover::after {
+    header .navbar-collapse .navbar-nav .nav-item a:hover::after {
       width: 100%;
       right: 0; }
 
@@ -97,14 +96,9 @@ header .navbar-nav {
   .logo {
     width: 100%; } }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .logo {
-    width: 200%;
-    margin-left: 10px; } }
-
-@media (max-width: 400px) {
-  .container-fluid {
-    flex-direction: column; } }
+    width: 100%; } }
 
 #footer {
   width: 100%;
@@ -186,15 +180,27 @@ main {
     transition: all 5s; }
 
 .art__img {
-  max-width: 100%; }
+  max-width: 100%;
+  transition: all .7s; }
   .art__img :hover {
-    transform: scale(1.1); }
+    transform: scale(5%); }
 
 .art-galeria {
-  transition: all 3s; }
+  transition: all .5s; }
   .art-galeria :hover {
-    width: 320px;
-    height: 320px; }
+    transform: scale(1.5); }
+
+.articulo__img {
+  max-width: 100%;
+  transition: all .7s; }
+  .articulo__img :hover {
+    transform: scale(2); }
+
+.articulo__button {
+  max-width: 100%;
+  transition: all .7s; }
+  .articulo__button :hover {
+    transform: scale(2); }
 
 .bannerindex {
   max-width: 100%; }
@@ -251,23 +257,35 @@ main {
   align-items: center;
   flex-wrap: wrap; }
   #reserva .row {
-    margin-bottom: 2rem; }
-    #reserva .row .col-lg-3 {
+    margin-top: 2rem;
+    margin-bottom: 3rem; }
+    #reserva .row .disponibilidad {
       color: #fff;
-      font-size: 20px; }
-      #reserva .row .col-lg-3 .form-select {
-        font-size: 16px; }
-    #reserva .row .col-lg-12 {
+      font-size: 22px;
+      padding: 10px;
       margin-top: 2rem;
-      margin-bottom: 2rem;
-      gap: 20px; }
-    #reserva .row .col-lg-1 {
-      color: rgba(50, 50, 40, 0.872); }
-    #reserva .row .boton-reservas {
-      color: #fff; }
-
-label {
-  color: rgba(50, 50, 40, 0.872); }
+      margin-bottom: 2rem; }
+    #reserva .row .formulario {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      #reserva .row .formulario .col-lg-3.mb-3 {
+        padding: 10px; }
+        #reserva .row .formulario .col-lg-3.mb-3 .form-control {
+          font-size: 14px;
+          color: rgba(50, 50, 40, 0.872); }
+        #reserva .row .formulario .col-lg-3.mb-3 .form-select {
+          color: rgba(50, 50, 40, 0.872);
+          font-size: 18px; }
+        #reserva .row .formulario .col-lg-3.mb-3 .boton-reserva {
+          font-size: 14px;
+          background: rgba(132, 132, 132, 0.872);
+          border-color: rgba(83, 83, 69, 0.872);
+          color: #fff;
+          width: 100px;
+          height: 50px;
+          border-radius: 5; }
+          #reserva .row .formulario .col-lg-3.mb-3 .boton-reserva:hover {
+            background-color: rgba(50, 50, 40, 0.872); }
 
 .section2-reservas .carrusel-tit {
   color: #fff;
@@ -406,8 +424,7 @@ label {
     align-items: center; }
     #galeria .art-galeria .art__img {
       margin-top: 5px;
-      width: 100%;
-      transition: all .7s; }
+      width: 100%; }
 
 @media (max-width: 800px) {
   .art-galeria {
@@ -452,10 +469,7 @@ label {
     flex: 1 1 clamp(300px, 30%, 400px); }
     #articulos .articulo .articulo__img {
       width: 200px;
-      height: 200px;
-      max-width: 100%; }
-      #articulos .articulo .articulo__img :hover {
-        transform: scale(1.1); }
+      height: 200px; }
     #articulos .articulo .articulo__title {
       font-size: 2rem;
       font-family: 'Roboto', sans-serif;

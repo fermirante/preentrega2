@@ -16,17 +16,31 @@
 
 .art__img{
     max-width: 100%;
+    transition: all .7s;
     & :hover {
-        transform: scale(1.1);
+        transform: scale(5%);
     }
 }
-
 
 .art-galeria{
-    transition:all 3s;
+    transition: all .5s;
     & :hover{
-        width: 320px;
-        height: 320px;
+        transform: scale(1.5);
     }
 }
 
+.articulo__img{
+    max-width: 100%;
+    transition: all .7s;
+    & :hover {
+        transform: scale(2);
+    }
+}
+
+.articulo__button{
+    max-width: 100%;
+    transition: all .7s;
+    & :hover {
+        transform: scale(2);
+    }
+}

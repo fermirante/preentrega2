@@ -1,33 +1,47 @@
 #reserva{
     background-color:rgba(50, 50, 40, 0.872);
     @include flex;
-    .row{
-        margin-bottom: 2rem;
-        .col-lg-3{
+        .row{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            .disponibilidad{
             color: #fff;
-            font-size: 20px;
-            .form-select{
-                font-size: 16px;
-            }
-        }
-        .col-lg-12{
+            font-size: 22px;
+            padding: 10px;
             margin-top: 2rem;
             margin-bottom: 2rem;
-            gap: 20px;
-        }
-        .col-lg-1{
-            color: rgba(50, 50, 40, 0.872);
-        }
-        .boton-reservas{
-            color:#fff
+            }
+            .formulario{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                .col-lg-3.mb-3{
+                    padding: 10px;
+                    .form-control{
+                        font-size: 14px;
+                        color: rgba(50, 50, 40, 0.872);
+                        }
+                        .form-select{
+                        color: rgba(50, 50, 40, 0.872);
+                        font-size: 18px;
+                        }
+                        .boton-reserva{
+                            font-size: 14px;
+                            background: rgba(132, 132, 132, 0.872);
+                            border-color: rgba(83, 83, 69, 0.872);
+                            color: #fff;
+                            width: 100px;
+                            height: 50px;
+                            border-radius: 5;
+                        &:hover {
+                            background-color: rgba(50, 50, 40, 0.872);
+                            }
+                        }
+                }
+                
+            }
         }
     }
-}
 
-
-label{
-    color: rgba(50, 50, 40, 0.872);
-}
 
 .section2-reservas{
     .carrusel-tit {

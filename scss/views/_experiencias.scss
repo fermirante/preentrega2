@@ -29,18 +29,10 @@
         padding: 20px;
         gap: 1.5rem;
         flex: 1 1 clamp(300px, 30%, 400px);
-
         .articulo__img{
             width: 200px;
             height: 200px;     
-            max-width: 100%;
-            
-            & :hover{
-                transform: scale(1.1);
-            }
-
         }
-
         .articulo__title{
             font-size: 2rem;
             font-family: 'Roboto', sans-serif;

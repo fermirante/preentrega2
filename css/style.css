@@ -65,7 +65,8 @@ header .logo {
 header .navbar-collapse .navbar-nav {
   justify-content: center;
   text-align: center;
-  color: #6e7051; }
+  color: #6e7051;
+  margin-left: 20px; }
   header .navbar-collapse .navbar-nav .nav-item a {
     display: inline-block;
     margin-left: 40px;
@@ -406,32 +407,35 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
   flex-wrap: wrap;
   padding: 0 1rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  align-items: baseline; }
   #galeria .art-galeria {
     display: flex;
-    flex: 25%;
+    flex-wrap: wrap;
     flex-direction: column;
+    flex: 50%;
+    align-items: center;
     padding: 5px;
     gap: 10px;
-    align-items: center; }
+    align-items: center;
+    flex: 1 1 clamp(300px, 40%, 400px); }
     #galeria .art-galeria .art__img {
       margin-top: 5px;
-      width: 100%; }
+      width: 150%; }
 
-@media (max-width: 800px) {
+@media (max-width: 350px) {
   .art-galeria {
-    flex: 50%; } }
-
-@media (max-width: 600px) {
-  .art-galeria {
-    flex: 100%;
-    flex-wrap: wrap; } }
+    flex-direction: column;
+    align-items: center; }
+  .art__img {
+    flex: none;
+    width: 100%; } }
 
 #section1-exp {
   display: flex;
@@ -449,6 +453,8 @@ main {
 #articulos {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
